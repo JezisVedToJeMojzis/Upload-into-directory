@@ -19,11 +19,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Zadanie 1</title>
+    <title>Upload to directory</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Zadanie 1 - Upload do adresára</h1>
+    <h1>Upload to directory</h1>
     <hr>
 <div id="container">
     <?php
@@ -32,15 +32,15 @@
 <table class="sortable">
     <thead>
         <tr>
-            <th>Názov súboru</th>
-            <th class="sorttable_numeric">Veľkosť súboru</th>
-            <th>Dátum a čas uploadu</th>
+            <th>File name</th>
+            <th class="sorttable_numeric">File size</th>
+            <th>Upload date</th>
         </tr>
     </thead>
     <tbody>
     <?php
     $files = scandir($path);
-    if(realpath($path)=="/var/www/site136.webte.fei.stuba.sk/zad1/uploads"){ //cant go out of uploads/ directory
+    if(realpath($path)=="/var/www/site136.webte.fei.stuba.sk/zad1/uploads"){ //cant go out of uploads/ directory ***//change url to yours***
         $files = array_diff(scandir($path), array('.', '..'));
     }else{
         $files = scandir($path);
@@ -71,10 +71,10 @@
 </div>
 <hr>
     <div id="upload">
-    <h2>Upload do adresára</h2>
+    <h2>Upload to directory</h2>
     <form actions ="index.php" enctype="multipart/form-data" method="post">
-        <div id="t"><label for="title">Názov súboru: </label><input id="title" type="text" name="title"</div>
-        <div id="f"><label for="file">Súbor: </label><input id="file" name="fileToUpload"  type="file"</div>
+        <div id="t"><label for="title">File name: </label><input id="title" type="text" name="title"</div>
+        <div id="f"><label for="file">File: </label><input id="file" name="fileToUpload"  type="file"</div>
         <div id="u"><button type="submit" id="button">Upload</button></div>
     </form>
     </div>
