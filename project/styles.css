@@ -1,0 +1,82 @@
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color: forestgreen !important;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: black 4px 2px;
+    color: white;
+}
+#container{
+    border: 2px solid black;
+    height: auto;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkslateblue !important;
+    margin-bottom:2vw;
+    margin-top:2vw;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: black 4px 2px;
+}
+table, tr, th, td{
+    color: white;
+    font-size: 1vw;
+    align-self: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-shadow: black 4px 2px;
+    background-color: #3A2A2A;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.4vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    padding-top: 0.4vw;
+    margin-bottom:3vw;
+}
+#upload{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border: 2px solid black;
+    height: auto;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkslateblue !important;
+}
+#t,f,u{
+    color: white;
+    font-size: 1vw;
+    align-self: center;
+    border: 2px solid black;
+    text-shadow: black 4px 2px;
+    background-color: #3A2A2A;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 0.4vw;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+    padding-top: 0.4vw;
+    margin-bottom:3vw;
+}
+
+#title{
+    width:7vw;
+
+}
+#file{
+    width:10.5vw;
+}
+#button{
+    width:3vw;
+    height: 1vw;
+}
